@@ -1,0 +1,52 @@
+
+
+<!doctype html>
+<html lang="en">
+    {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Panashe Matsaudza</title>
+
+ 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+
+  <body>
+
+     
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Job Detail</h1>
+          <p class="lead text-muted">{{job.summary}}</p>
+        
+
+          <img src="{{ job.image.url }}" alt="panashe image" height=300>
+
+          <p>
+            <a href="{% url 'home' %}" class="btn btn-secondary my-2">Back</a>
+         </p>
+        </div>
+      </section>
+
+ 
+
+    </main>
+
+ 
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="{% static 'jquery-3.3.1.min.js' %}" ></script>
+    <script src="{% static 'popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+  </body>
+</html>
